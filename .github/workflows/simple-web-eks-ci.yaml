@@ -22,7 +22,7 @@ jobs:
       - name: 1.소스코드 다운로드
         uses: actions/checkout@v4 
 
-      - name: 7.Docker Image Build
+      - name: 2.Docker Image Build
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simple-web:${{ env.DOCKER_TAG }} .
 
       - name: 8.Docker Login
