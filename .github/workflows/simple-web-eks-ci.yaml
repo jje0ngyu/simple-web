@@ -64,5 +64,5 @@ jobs:
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
           git remote set-url origin https://${{ secrets.PAT }}@github.com/jje0ngyu/simple-web.git
 
-          git push origin main
+          git push -f origin main
 
