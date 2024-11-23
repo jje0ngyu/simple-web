@@ -27,7 +27,7 @@ jobs:
       - name: 6.Docker 디렉토리로 jar 파일 복사
         run: |
           mkdir -p test/
-          cp assets/* test/
+          cp -r assets/* test/
           ls test/
 
       - name: 7.Docker Image Build
